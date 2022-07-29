@@ -1,0 +1,284 @@
+:root {
+  --black: rgba(0,0,0,1);
+  --nighttime-blue: rgb(3, 18, 37);
+  --latte: rgba(215,199,185,1);
+  --latte-lite: rgba(215,199,185,0.3);
+  --dusty-pink: #e7b2a6;
+  --dusty-pink-lite: rgba(231, 178, 166, 0.5);
+  --white: rgba(255,255,255,1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /*Em Nanscawen Creative entry page*/
+
+  #logoGrid {
+    margin: 0px 0%;
+    background-color: var(--dusty-pink-lite);
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas:
+    "designLogo writingLogo";
+  }
+
+  .logoGridArea {
+    margin: 70px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  #designLogo {
+    grid-area: designLogo;
+    background-image: url("../Images/BusinessLogo/mainlogo2.png");
+  }
+
+  #writingLogo {
+    grid-area: writingLogo;
+    background-image: url("../Images/BusinessLogo/WritingLogo/mainlogo2.png");
+  }
+
+  /*Em Nanscawen Design entry page*/
+
+  .hero {
+    background-color: var(--dusty-pink-lite);
+    width: 100vw;
+    height: 65vh;
+  }
+
+  #navBar {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 10px;
+  }
+
+  .navigationLinks {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a {
+    color: #424242;
+    text-decoration: none;
+  }
+    
+    .wrapper >*:first-child {
+      padding: 1rem;
+    }
+    
+    .wrapper .underline {
+      background-color: var(--dusty-pink);
+      height: 6px;
+      border-radius: 1rem;
+      opacity: 0;
+      transition: 400ms;
+      transform: translateX(-25%);
+    }
+    
+    .wrapper:hover .underline {
+      opacity: 1;
+       transform: translateX(0);
+    }
+    
+
+  .designLogo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url("../Images/BusinessLogo/mainlogo2.png");
+    width: 350px;
+    height: 350px;
+    margin: 0 37vw;
+  }
+
+  /*.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+  }
+  .icons img {
+    margin: 5px;
+    cursor: pointer;
+    justify-content: right;
+  }*/
+
+  #topicContainer {
+    display: flex;
+    background-color: var(--latte);
+    width: 80vw;
+    justify-content: center;
+    margin: 100px 10vw 100px 10vw;
+  }
+
+  .topicBar {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    align-content: center;
+    justify-content: space-around;
+    color: var(--nighttime-blue);
+    cursor: pointer;
+  }
+
+  .topicBar > *:hover {
+    color: var(--white);
+  }
+
+  #aboutContainer {
+    background-image: url("../Images/BackgroundShapes/Half-dusty-pink-tilt-inverted.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 80vw;
+    margin: 0 10vw 0 10vw;
+  }
+
+  #aboutContainer H1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: center;
+  }
+
+  #aboutGrid {
+    margin: 20px 5%;
+    display: grid;
+    align-content: end;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "research definition design delivery";
+    gap: 1rem;
+  }
+
+  #research {
+    grid-area: research;
+  }
+
+  #definition {
+    grid-area: definition;
+  }
+
+  #design {
+    grid-area: design;
+  }
+
+  #delivery {
+    grid-area: delivery;
+  }
+
+  #aboutGrid img {
+    width: 15%;
+  }
+
+  .heading {
+    border-bottom: 3px solid var(--dusty-pink);
+    padding: 15px;
+    height: 25px;
+    color: var(--nighttime-blue);
+    font-size: 18px;
+    display: grid;
+    justify-content: center;
+  }
+
+  .aboutGridArea {
+    margin: 10px;
+    display: grid;
+    align-content: start;
+  }
+
+  #workContainer {
+    background-image: url("../Images/BackgroundShapes/Half-dusty-pink-tilt.svg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 10vw 0 10vw;
+    height: 600px;
+    width: 80vw;
+  }
+
+  #workContainer H1 {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+  }
+
+  #workGrid {
+    margin: 20px 5%;
+    display: grid;
+    align-content: end;
+    grid-template-rows: 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "firstFeaturedWork secondFeaturedWork";
+    gap: 5rem;
+  }
+  
+  .firstFeaturedWork {
+    grid-area: firstFeaturedWWork;
+  }
+  
+  .secondFeaturedWork {
+    grid-area: secondFeaturedWork;
+  }
+
+  .workGridArea {
+    display: grid;
+    align-content: start;
+  }
+
+  #workGrid img {
+    height: 25vh;
+  }
+
+  #footerContainer {
+    background-color: var(--dusty-pink-lite);
+    background-position: center;
+    width: 100vw;
+    height: 35vh;
+    margin-top: 50px;
+  }
+
+  #footerContainer h4 {
+    padding: 40px;
+    display: flex;  
+    justify-content: center;
+  }
+
+  #emailEm {
+    display: flex;
+    justify-content: center;  
+  }
+
+  #socialLinks {
+    margin: 20px 60px 20px 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #socialLinks img {
+    height: 5vh;
+    margin: 20px 60px 20px 60px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #workGrid {
+      margin: 0px 5%;
+      display: grid;
+      min-height: 200px;
+      height: 55vh;
+      grid-template-rows: 300px;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+      "firstFeaturedWork secondFeaturedWork"
+    }
+  }
+

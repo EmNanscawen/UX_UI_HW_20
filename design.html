@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Nanscawen Design</title>
+
+    <link type="text/css" rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <section class="hero">
+        <nav id="navBar">
+            <div class="navigationLinks">
+                <div id="nav-links">
+                    <a href="#" class="wrapper">
+                        <div>About me</div>
+                        <div class="underline"></div>
+                    </a>
+                </div>
+                <div id="nav-links">
+                    <a href="#" class="wrapper">
+                        <div>Resume</div>
+                        <div class="underline"></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="designLogo">
+            <img src="./Images/BusinessLogo/mainlogo2.png">
+        </div>
+    </section>
+
+    <section id="topicContainer">
+        <div class="topicBar">
+            <p>Topic 1</p>
+            <p>Topic 2</p>
+            <p>Topic 3</p>
+            <p>Topic 4</p>
+            <p>Topic 5</p>
+        </div>
+    </section>
+
+    <section id="aboutContainer">
+        <h1>Hi, I'm Em, and I <div id="header" style="display:inline; border-bottom:3px solid #e7b2a6;"> am a problem solver
+           </div> </h1>
+        <div id="aboutGrid" class="aboutGrid">
+            <div id="Research" class="aboutGridArea">
+                <div class="heading">Research </div>
+                <p>Using a variety of research methods, I help you understand the experience that customer's have with your business and leverage that to create actionable insights that help drive engagement.</p>
+                <img src="./Images/Icons/VectorResearch.png">
+            </div>
+            <div id="Definition" class="aboutGridArea">
+                <div class="heading">Definition</div>
+                <p>Businesses are faced with many challenges in providing services to customers, defining the right problem is the critical first step in understanding where change is required.</p>
+                <img src="./Images/Icons/jam_writeDefinition.png">
+            </div>
+            <div id="Design" class="aboutGridArea">
+                <div class="heading">Design</div>
+                <p>I apply proven user centric strategies to design new experiences for your customers that improves customer satisfaction and creates strong brand relationships.</p>
+                <img src="./Images/Icons/Design.png">
+            </div>
+            <div id="Delivery" class="aboutGridArea">
+                <div class="heading">Delivery</div>
+                <p>With years of experience in delivery projects, I can support your team through the full product and project lifecycle.</p>
+                <img src="./Images/Icons/Delivery.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="workContainer">
+        <h1>Past projects</h1>
+        <div id="workGrid" class="workGrid">
+            <div id="firstFeaturedWork" class="workGridArea">
+                <div class="heading">Department of Agriculture and Fisheries </div>
+                    <p>Research and analysis of the customer journey, redesign of the information architecture and responsive re-design of the website</p>
+                    <img src="./Images/CaseStudies/DAF/Image 23-7-2022 at 10.19 pm.jpeg">
+                </div>
+            <div id="secondFeaturedWork" class="workGridArea">
+                <div class="heading">Animal Welfare League of QLD</div>
+                    <p>A group case study project where I conducted user reserch, analysis and problem definition which formed the basis for a full website redesign.</p>
+                    <img src="./Images/CaseStudies/AWLQ/Image 23-7-2022 at 10.22 pm.jpeg">
+                </div>
+            <div id="caseStudyLinks">
+                <p>View all projects</p>
+                </div>
+        </div>
+    </section>
+
+    <footer id="footerContainer">
+        <h4>Want to chat? Feel free to reach out, I'd love to hear from you</h4>
+        <div id="emailEm">
+            <a href="mailto:hello@EmNanscawen.com">hello@EmNanscawen.com</a>
+        </div>
+        <div id="socialLinks">
+            <img src="./Images/VectorLinkedIn.png">
+            <a href="https://www.linkedin.com/in/emmy-nanscawen-81692043/"></a>
+            </img>
+            <img src="./Images/VectorTwitter.png">
+            <a href="https://twitter.com/Em_Nanscawen"></a>
+        </div>
+    </footer>
+</body>
+
+<script src="./js/index.js"></script>
+
+<script>
+    var text = ['question everything', 'listen to people', 'like to solve problems', 'achieve business outcomes', 'create satisfying user experiences']; function callMe(){
+        var myText = document.getElementById('header'); var curIdx = text.indexOf(myText.innerHTML); myText.innerHTML = text[(curIdx+1)%text.length];
+    }
+    
+    setInterval(callMe,2000);
+    </script>
+</html>
+
+<!--
+<div class="icons">
+<img src="./Images/EmailVector.png">
+<img src="./Images/VectorLinkedIn.png">
+<img src="./Images/VectorTwitter.png">
+</div>-->
